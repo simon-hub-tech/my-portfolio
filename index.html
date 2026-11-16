@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simon Mukhwana Simiyu | Web Developer</title>
+
+    <meta name="description"
+        content="Personal portfolio of Simon Mukhwana Simiyu, Web Developer and Information Technology student at Kabarak University.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Theme Initialization -->
+    <script>
+        const savedTheme = localStorage.getItem("portfolio-theme");
+
+        if (savedTheme === "light") {
+            document.documentElement.classList.remove("dark");
+        } else {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- =====================================
+         NAVIGATION
+    ====================================== -->
+
+    <header class="navbar" id="navbar">
+
+        <nav class="container nav-container">
+
+            <a href="#home" class="logo">
+                SIMON<span>.DEV</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+
+            <ul class="nav-links" id="nav-links">
+
+                <li><a href="#home" class="nav-link active">Home</a></li>
+
+                <li><a href="#about" class="nav-link">About</a></li>
+
+                <li><a href="#education" class="nav-link">Education</a></li>
+
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+
+                <li><a href="#services" class="nav-link">Services</a></li>
+
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <!-- Theme Button -->
+
+                <button id="theme-toggle" class="theme-toggle"
+                    aria-label="Switch theme">
+
+                    <i class="fas fa-sun" id="theme-icon"></i>
+
+                </button>
+
+                <a href="#contact" class="nav-cta">
+                    Let's Talk <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <!-- Mobile Menu Button -->
+
+                <button id="menu-toggle" class="menu-toggle"
+                    aria-label="Open menu"
+                    aria-expanded="false">
+
+                    <i class="fas fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================
+             HOME / HERO SECTION
+        ====================================== -->
+
+        <section id="home" class="hero section">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        <span class="status-dot"></span>
+                        AVAILABLE FOR OPPORTUNITIES
+                    </p>
+
+                    <p class="hero-intro">HELLO, I'M</p>
+
+                    <h1>
+                        Simon Mukhwana
+                        <span>Simiyu.</span>
+                    </h1>
+
+                    <h2>
+                        Web Developer <span>&</span> Programmer
+                    </h2>
+
+                    <p class="hero-description">
+                        I build modern, responsive and functional web
+                        experiences. I am an Information Technology student
+                        passionate about web development, programming and
+                        database management.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Work
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Get In Touch
+                        </a>
+
+                    </div>
+
+                    <!-- Social Links -->
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/simon-hub-tech"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://wa.me/254719140399"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="mailto:simiyu.simon212@gmail.com"
+                            aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Visual -->
+
+                <div class="hero-visual">
+
+                    <div class="hero-image-wrapper">
+
+                        <div class="image-placeholder">
+
+                            <img src="images/simon.jpeg" alt="Simon Mukhwana Simiyu">
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card">
+
+                        <span class="floating-icon">
+                            <i class="fas fa-code"></i>
+                        </span>
+
+                        
+                        
+                        
+                    
+
+                    </div>
+
+                    <div class="hero-decoration"></div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom container">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <i class="fas fa-arrow-down"></i>
+
+                <span class="hero-location">
+                    <i class="fas fa-location-dot"></i>
+                    Nakuru, Kenya
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ABOUT SECTION
+        ====================================== -->
+
+        <section id="about" class="section about-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">01 / ABOUT ME</p>
+
+                    <h2>Getting to Know <span>Me</span></h2>
+
+                    <p>
+                        A little about who I am, what I do and where
+                        I want to go.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <h3>
+                            Passionate about technology
+                            and building useful solutions.
+                        </h3>
+
+                        <p>
+                            My name is Simon Mukhwana Simiyu. I am a Web
+                            Developer and a Bachelor of Science in Information
+                            Technology student at Kabarak University.
+                        </p>
+
+                        <p>
+                            I have a strong interest in creating websites,
+                            developing software and working with databases.
+                            I enjoy learning new technologies and applying
+                            my knowledge through practical projects.
+                        </p>
+
+                        <p>
+                            My goal is to continue developing my technical
+                            abilities and build digital solutions that
+                            solve real-world problems.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-info">
+
+                        <div class="info-card">
+
+                            <span>NAME</span>
+                            <h4>Simon Mukhwana Simiyu</h4>
+
+                        </div>
+
+                        <div class="info-card">
+
+                            <span>PROFESSION</span>
+                            <h4>Web Developer</h4>
+
+                        </div>
+
+                        <div class="info-card">
+
+                            <span>LOCATION</span>
+                            <h4>Nakuru, Kenya</h4>
+
+                        </div>
+
+                        <div class="info-card">
+
+                            <span>UNIVERSITY</span>
+                            <h4>Kabarak University</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             EDUCATION SECTION
+        ====================================== -->
+
+        <section id="education" class="section education-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">02 / EDUCATION</p>
+
+                    <h2>My Academic <span>Journey</span></h2>
+
+                    <p>
+                        My educational background and academic development.
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="education-details">
+
+                        <span class="education-date">
+                            2026 – PRESENT
+                        </span>
+
+                        <h3>Kabarak University</h3>
+
+                        <h4>
+                            Bachelor of Science in Information Technology
+                        </h4>
+
+                        <p>
+                            Currently pursuing a degree in Information
+                            Technology, developing knowledge in programming,
+                            web development, databases and computer systems.
+                        </p>
+
+                        <span class="education-status">
+                            <i class="fas fa-circle"></i>
+                            Currently Studying
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             SKILLS SECTION
+        ====================================== -->
+
+        <section id="skills" class="section skills-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">03 / TECHNICAL SKILLS</p>
+
+                    <h2>Technologies I <span>Work With</span></h2>
+
+                    <p>
+                        Technologies and tools I use in my development journey.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <!-- Frontend -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+
+                        <h3>Frontend Development</h3>
+
+                        <p>Building responsive and interactive interfaces.</p>
+
+                        <div class="skill-tags">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Programming -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+
+                        <h3>Programming</h3>
+
+                        <p>Writing code and developing software solutions.</p>
+
+                        <div class="skill-tags">
+
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>Python</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Database -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+
+                        <h3>Database Management</h3>
+
+                        <p>Working with data organization and management.</p>
+
+                        <div class="skill-tags">
+
+                            <span>SQL</span>
+                            <span>Database Design</span>
+                            <span>Data Management</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Tools -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fas fa-screwdriver-wrench"></i>
+                        </div>
+
+                        <h3>Development Tools</h3>
+
+                        <p>Tools used in website development and collaboration.</p>
+
+                        <div class="skill-tags">
+
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Vercel</span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             SERVICES SECTION
+        ====================================== -->
+
+        <section id="services" class="section services-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">04 / SERVICES</p>
+
+                    <h2>What I Can <span>Do</span></h2>
+
+                    <p>
+                        Areas of development and technology I focus on.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+
+                        <i class="fas fa-globe"></i>
+
+                        <h3>Website Development</h3>
+
+                        <p>
+                            Developing modern websites for businesses,
+                            organizations and individuals.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <i class="fas fa-mobile-screen"></i>
+
+                        <h3>Responsive Web Design</h3>
+
+                        <p>
+                            Creating websites that adapt to desktops,
+                            tablets and mobile devices.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <i class="fas fa-server"></i>
+
+                        <h3>Database Management</h3>
+
+                        <p>
+                            Designing and organizing databases for
+                            structured information management.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <i class="fas fa-code"></i>
+
+                        <h3>Programming Solutions</h3>
+
+                        <p>
+                            Developing practical software solutions
+                            using programming languages.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             PROJECTS SECTION
+        ====================================== -->
+
+        <section id="projects" class="section projects-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">05 / MY WORK</p>
+
+                    <h2>Featured <span>Projects</span></h2>
+
+                    <p>
+                        A selection of projects I have worked on.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- Project 1 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image salon-image">
+
+                            <img src="images/grace beauty salon.png" alt="Grace Beauty Salon">
+
+                            <span>01</span>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <p class="project-category">
+                                WEB DEVELOPMENT
+                            </p>
+
+                            <h3>Grace Beauty Salon</h3>
+
+                            <p>
+                                A beauty salon website project designed
+                                to present salon services and business
+                                information online.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Website</span>
+                                <span>Frontend</span>
+                            </div>
+
+                            <a href="https://github.com/simon-hub-tech/grace-beauty-salon"
+                                target="_blank" rel="noopener noreferrer"
+                                class="project-link">
+
+                                View Repository
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image school-image">
+
+                            <img src="images/school management system.png" alt="School Management System">
+
+                            <span>02</span>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <p class="project-category">
+                                SYSTEM DEVELOPMENT
+                            </p>
+
+                            <h3>School Management System</h3>
+
+                            <p>
+                                A school management system project focused
+                                on organizing school-related information
+                                and operations.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Management System</span>
+                                <span>Software</span>
+                            </div>
+
+                            <a href="https://github.com/simon-hub-tech/school-management-system"
+                                target="_blank" rel="noopener noreferrer"
+                                class="project-link">
+
+                                View Repository
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image furniture-image">
+
+                            <img src="images/simon craft furniture.png" alt="Simon Craft Furnitures">
+
+                            <span>03</span>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <p class="project-category">
+                                WEB DEVELOPMENT
+                            </p>
+
+                            <h3>Simon Craft Furnitures</h3>
+
+                            <p>
+                                A furniture business website project
+                                showcasing furniture products and
+                                business information.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Website</span>
+                                <span>Responsive Design</span>
+                            </div>
+
+                            <a href="https://github.com/simon-hub-tech/simon-craft-furnitures"
+                                target="_blank" rel="noopener noreferrer"
+                                class="project-link">
+
+                                View Repository
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 4 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image hospital-image">
+
+                            <img src="images/future pulse hospital.png" alt="Future Pulse Hospital">
+
+                            <span>04</span>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <p class="project-category">
+                                WEB DEVELOPMENT
+                            </p>
+
+                            <h3>Future Pulse Hospital</h3>
+
+                            <p>
+                                A hospital website project focused on
+                                presenting healthcare services and
+                                hospital information.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Website</span>
+                                <span>Healthcare</span>
+                            </div>
+
+                            <a href="https://github.com/simon-hub-tech/FUTURE-PULSE-HOSPITAL"
+                                target="_blank" rel="noopener noreferrer"
+                                class="project-link">
+
+                                View Repository
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+                <div class="projects-footer">
+
+                    <a href="https://github.com/simon-hub-tech"
+                        target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline">
+
+                        Explore My GitHub
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             EXPERIENCE SECTION
+        ====================================== -->
+
+        <section id="experience" class="section experience-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">06 / DEVELOPMENT JOURNEY</p>
+
+                    <h2>My Practical <span>Journey</span></h2>
+
+                    <p>
+                        Learning, building and improving through practical work.
+                    </p>
+
+                </div>
+
+
+                <div class="experience-card">
+
+                    <div class="experience-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="experience-date">
+                            2026 – PRESENT
+                        </span>
+
+                        <h3>Personal & Academic Projects</h3>
+
+                        <p>
+                            Developing practical experience through website
+                            development, programming exercises, database
+                            activities and personal projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CONTACT SECTION
+        ====================================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">07 / GET IN TOUCH</p>
+
+                    <h2>Let's Work <span>Together</span></h2>
+
+                    <p>
+                        Have a project or an opportunity? Feel free to
+                        get in touch.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <!-- Contact Information -->
+
+                    <div class="contact-information">
+
+                        <h3>Let's start a conversation.</h3>
+
+                        <p>
+                            I am interested in connecting with people,
+                            discussing technology and exploring development
+                            opportunities.
+                        </p>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:simiyu.simon212@gmail.com">
+                                    simiyu.simon212@gmail.com
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <span>Phone</span>
+                                <a href="tel:+254719140399">
+                                    0719140399
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+
+                            <div>
+                                <span>WhatsApp</span>
+                                <a href="https://wa.me/254719140399"
+                                    target="_blank" rel="noopener noreferrer">
+                                    Chat on WhatsApp
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+
+                            <div>
+                                <span>GitHub</span>
+                                <a href="https://github.com/simon-hub-tech"
+                                    target="_blank" rel="noopener noreferrer">
+                                    simon-hub-tech
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <span>Location</span>
+                                <p>Nakuru, Kenya</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Contact Form -->
+
+                    <form id="contact-form" class="contact-form">
+
+                        <div class="form-group">
+
+                            <label for="name">Your Name</label>
+
+                            <input type="text" id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">Your Email</label>
+
+                            <input type="email" id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">Subject</label>
+
+                            <input type="text" id="subject"
+                                name="subject"
+                                placeholder="Enter subject"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">Message</label>
+
+                            <textarea id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">
+
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+
+                        </button>
+
+                        <p id="form-status" aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="#home" class="logo">
+                    SIMON<span>.DEV</span>
+                </a>
+
+                <p>
+                    Building modern digital experiences through
+                    technology and creativity.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Simon Mukhwana Simiyu. All rights reserved.
+            </p>
+
+            <a href="#home">
+                Back to top <i class="fas fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
